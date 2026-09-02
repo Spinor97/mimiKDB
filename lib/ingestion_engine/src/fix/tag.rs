@@ -67,7 +67,6 @@ pub const MD_ENTRY_TIME: u32 = 273;
 
 pub const TRADE_TYPE: u32 = 828;
 
-pub const SYMBOL: u32 = 55;
 pub const NO_RELATED_SYM: u32 = 146;
 pub const MD_REQ_ID: u32 = 262;
 pub const SUBSCRIPTION_REQUEST_TYPE: u32 = 263;
