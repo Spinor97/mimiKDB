@@ -1,0 +1,11 @@
+[package]
+name = "fook_kdb"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.104"
+tokio = { version = "1", features = ["rt-multi-thread", "macros"] }
+ingestion_engine = { path = "../lib/ingestion_engine" }
+tick_score = { path = "../lib/tick_score" }
+query_engine = { path = "../lib/query_engine" }

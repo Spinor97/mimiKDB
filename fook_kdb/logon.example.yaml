@@ -1,0 +1,10 @@
+# Copy to logon.yaml (or pass a path as the 1st CLI arg) and fill in real
+# exchange credentials -- these are placeholder values, not real ones.
+host: exchange.example.com
+port: "9001"
+sender_id: US
+target_id: EX
+username: alice
+password: secret
+reset_seq_no: false
+heart_bt_int: 30

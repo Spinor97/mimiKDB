@@ -1,0 +1,18 @@
+[package]
+name = "ingestion_engine"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.104"
+async-stream = "0.3.6"
+bytes = "1.12.1"
+chrono = "0.4.45"
+futures = "0.3.34"
+futures-core = "0.3.34"
+native-tls = "0.2.18"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_yaml = "0.9.34"
+tokio = { version = "1.53.1", features = ["rt-multi-thread", "macros", "time", "net", "io-util", "sync"] }
+tokio-native-tls = "0.3.1"
+tokio-util = { version = "0.7.19", features = ["codec"] }

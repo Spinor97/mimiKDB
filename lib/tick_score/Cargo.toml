@@ -1,0 +1,19 @@
+[package]
+name = "tick_score"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+ingestion_engine = { path = "../ingestion_engine" }
+anyhow = "1.0.104"
+chrono = "0.4.45"
+futures = "0.3.34"
+futures-core = "0.3.34"
+polars = { version = "0.55.2", features = ["dtype-full", "json", "lazy", "parquet", "performant", "streaming"] }
+serde = "1.0.229"
+serde_yaml = "0.9.34"
+tokio = { version = "1.53.1", features = ["full"] }
+
+[dev-dependencies]
+tempfile = "3"
+tokio = { version = "1.53.1", features = ["test-util"] }

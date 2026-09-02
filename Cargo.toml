@@ -1,0 +1,7 @@
+[workspace]
+number = [
+    "fook_kdb",
+    "lib/*",
+]
+resolver = "2"
+members = ["fook_kdb", "lib/ingestion_engine", "lib/query_engine", "lib/tick_score"]

@@ -1,0 +1,6 @@
+# Copy to batch_config.yaml (or pass a path as the 2nd CLI arg).
+max_rows: 500
+max_age: 2
+data_dir: "./data"
+compact_interval: 300
+compact_threshold: 5

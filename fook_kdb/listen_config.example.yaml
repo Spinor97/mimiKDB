@@ -1,0 +1,4 @@
+# Copy to listen_config.yaml (or pass a path as the 3rd CLI arg).
+addr: "127.0.0.1"
+port: "5432"
+timeout: 300
