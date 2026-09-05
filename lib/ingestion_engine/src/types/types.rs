@@ -7,6 +7,29 @@ use chrono::{DateTime, Utc};
 
 use crate::{errors::ParsingError, fix::{raw_msg::{RawMessage, ValType}, tag}, utils::times::combine_date_time};
 
+#[derive(Debug, Clone)]
+pub enum State {
+    Normal,
+    Refill(u32),
+}
+
+impl State {
+    pub fn decrement_refill(&mut self) {
+        match self {
+            Self::Refill(n) => {
+                if *n > 0 {
+                    *n -= 1;
+                }
+
+                if *n == 0 {
+                    *self = Self::Normal;
+                }
+            },
+            _ => {}
+        }
+    }
+}
+
 #[derive(Clone, Debug)]
 pub struct Quote {
     pub receive_time: DateTime<Utc>,
